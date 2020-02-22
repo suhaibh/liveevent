@@ -1,2 +1,6 @@
-<h1>SitePages#home</h1>
-<p>Find me in app/views/site_pages/home.html.erb</p>
+<h1 class="primary-text">Say what's good</h1>
+<%= form_with class: "contact-form" do %>
+	<%= label_tag(:name, "Enter your name:") %>
+	<%= text_field_tag(:name) %>
+	<%= submit_tag("Send") %>
+<% end %>
