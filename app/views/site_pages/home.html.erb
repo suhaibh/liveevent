@@ -1,18 +1,3 @@
 <h1 class="primary-text">Say what's good</h1>
 
-<%= form_with(model: @contact, local: true) do |f| %>
-	
-	<%= f.label(:name, "Enter your name:") %>
-	<%= f.text_field(:name) %>
-
-	<%= f.label(:email, "Enter your email:") %>
-	<%= f.email_field(:email) %>
-
-	<%= f.label(:brand, "Enter your company name:") %>
-	<%= f.text_field(:brand) %>
-
-	<%= f.label(:proposal, "Enter your idea:") %>
-	<%= f.text_area(:proposal) %>
-
-	<%= f.submit("Send") %>
-<% end %>
+<%= render 'shared/form' %>
